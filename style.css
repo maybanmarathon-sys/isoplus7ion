@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(to bottom, #0a1f44, #06152b);
+  background: #081c3a;
   color: white;
 }
 
@@ -9,13 +9,13 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: rgba(0,0,0,0.3);
+  padding: 15px 30px;
+  background: #0d2c6c;
 }
 
 .navbar a {
-  margin: 10px;
   color: white;
+  margin: 10px;
   text-decoration: none;
 }
 
@@ -23,29 +23,35 @@ body {
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: 
-    linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)),
-    url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5');
+  background:
+  linear-gradient(rgba(0,0,50,0.6), rgba(0,0,80,0.8)),
+  url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5');
   background-size: cover;
-  background-position: center;
 }
 
 .hero h1 {
   font-size: 40px;
-  text-shadow: 0 0 15px rgba(255,255,0,0.8);
+  text-shadow: 0 0 10px yellow;
 }
 
-.hero h2 {
+.hero h3 {
   color: yellow;
 }
 
-.btn {
-  padding: 12px 30px;
-  background: yellow;
+.hero-btn button {
+  margin: 10px;
+  padding: 12px 20px;
   border: none;
-  font-weight: bold;
-  margin-top: 20px;
-  border-radius: 5px;
+}
+
+.btn-primary {
+  background: yellow;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 /* COUNTDOWN */
@@ -53,38 +59,88 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 40px;
+  padding: 30px;
 }
 
 .countdown div {
-  background: rgba(255,255,255,0.05);
+  background: #132c5b;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0,150,255,0.5);
 }
 
 /* CATEGORY */
 .category {
+  text-align: center;
+}
+
+.cards {
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 40px;
   flex-wrap: wrap;
 }
 
 .card {
-  padding: 25px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
   width: 120px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
   transition: 0.3s;
 }
 
 .card:hover {
   transform: scale(1.1);
+}
+
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.orange { background: #e67e22; }
+.red { background: #e74c3c; }
+
+/* HIGHLIGHT */
+.highlights {
+  text-align: center;
+  padding: 30px;
+}
+
+.highlight-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 30px;
+  background: #0d2c6c;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background: yellow;
+}
+
+/* TESTI */
+.testimoni {
+  text-align: center;
+  padding: 30px;
+}
+
+.testi-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testi {
+  background: #132c5b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
