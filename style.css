@@ -32,6 +32,7 @@ body {
 
 .hero h1 {
   font-size: 40px;
+  text-shadow: 0 0 15px rgba(255,255,0,0.8);
 }
 
 .hero h2 {
