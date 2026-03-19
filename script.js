@@ -1,16 +1,21 @@
-const target = new Date("Oct 4, 2026 00:00:00").getTime();
+const targetDate = new Date("Oct 4, 2026 00:00:00").getTime();
 
-setInterval(() => {
+const countdown = setInterval(() => {
   const now = new Date().getTime();
-  const diff = target - now;
+  const distance = targetDate - now;
 
-  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const m = Math.floor((diff / (1000 * 60)) % 60);
-  const s = Math.floor((diff / 1000) % 60);
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((distance / (1000 * 60)) % 60);
+  const seconds = Math.floor((distance / 1000) % 60);
 
-  document.getElementById("days").innerText = d;
-  document.getElementById("hours").innerText = h;
-  document.getElementById("minutes").innerText = m;
-  document.getElementById("seconds").innerText = s;
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+
+  if (distance < 0) {
+    clearInterval(countdown);
+    document.querySelector(".timer").innerHTML = "EVENT DIMULAI!";
+  }
 }, 1000);
