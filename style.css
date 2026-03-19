@@ -81,16 +81,10 @@ body {
   color: white;
   text-align: center;
   width: 120px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  transition: 0.3s;
 }
 
-.blue { background: #3498db; }
-.green { background: #2ecc71; }
-.orange { background: #e67e22; }
-.red { background: #e74c3c; }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.7;
+.card:hover {
+  transform: scale(1.1);
 }
