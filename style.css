@@ -23,7 +23,11 @@ body {
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: linear-gradient(to right, #0a1f44, #1e3c72);
+  background: 
+    linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)),
+    url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
