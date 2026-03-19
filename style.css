@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a1f44;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0d2c6c;
+}
+
+.navbar a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #0a1f44, #1e3c72);
+}
+
+.btn {
+  padding: 12px 25px;
+  background: yellow;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* COUNTDOWN */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.countdown div {
+  background: #132c5b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* CATEGORY */
+.category {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* WARNA */
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.orange { background: #e67e22; }
+.red { background: #e74c3c; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
